@@ -1,0 +1,14 @@
+{
+  "name": "simple-electron-browser",
+  "version": "0.1.0",
+  "description": "Simple Chromium-based browser built with Electron (demo)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "jusihu116-dot",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.0.0"
+  }
+}

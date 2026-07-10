@@ -1,0 +1,56 @@
+/* styles.css */
+html,body{
+  height:100%;
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', Arial;
+}
+#toolbar{
+  display:flex;
+  flex-direction:column;
+  border-bottom:1px solid #ddd;
+}
+#nav{
+  display:flex;
+  align-items:center;
+  padding:6px;
+  gap:6px;
+}
+#nav button{
+  padding:6px 8px;
+}
+#address{
+  flex:1;
+  padding:6px 8px;
+  border:1px solid #ccc;
+  border-radius:4px;
+}
+#tabs-controls{
+  display:flex;
+  align-items:center;
+  padding:6px;
+}
+#tabs{
+  display:flex;
+  gap:4px;
+  flex:1;
+  overflow:auto;
+}
+.tab{
+  background:#f3f3f3;
+  border:1px solid #ddd;
+  padding:6px 10px;
+  border-radius:4px;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.tab.active{ background:#fff; box-shadow:0 1px 0 rgba(0,0,0,0.05); }
+.tab .tab-close{ margin-left:8px; cursor:pointer; }
+#webviews{
+  height: calc(100vh - 112px);
+  display:flex;
+}
+.webview{
+  width:100%;
+  height:100%;
+}
