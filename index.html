@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Simple Electron Browser</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="toolbar">
+    <div id="nav">
+      <button id="back">◀</button>
+      <button id="forward">▶</button>
+      <button id="reload">⟳</button>
+      <input id="address" type="text" placeholder="https://example.com">
+      <button id="go">Go</button>
+    </div>
+    <div id="tabs-controls">
+      <div id="tabs"></div>
+      <button id="new-tab">＋</button>
+    </div>
+  </div>
+
+  <div id="webviews"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
